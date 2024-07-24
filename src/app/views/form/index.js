@@ -1,2 +1,2 @@
-export * from './FormRequestBasicOfTruck';
+export * from './FormAreaOficina';
 

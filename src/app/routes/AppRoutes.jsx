@@ -8,7 +8,7 @@ import 'sweetalert2/dist/sweetalert2.css';
 import { NavBar } from "../components/navbar/NavBar";
 import { 
   
-  FormRequestBasicOfTruck, 
+  FormAreaOficina
   } from "../views/form";
 import { numericFormat, textFormat } from "../../helpers";
 import { startLogout } from "../../store/auth";
@@ -30,9 +30,8 @@ export const AppRoutes = () => {
 
   const handleChangeInputText = (e) => {
     const { name, value } = e.target;
-    const formatValue = textFormat(value).toUpperCase();
 
-    setFormCheck( {...formCheck, [name]: formatValue } )
+    setFormCheck( {...formCheck, [name]: value } )
   }
 
 
@@ -78,7 +77,7 @@ export const AppRoutes = () => {
     <NavBar />
     <Routes>
       <Route path='/' element={ 
-        <FormRequestBasicOfTruck 
+        <FormAreaOficina 
           formData={ formCheck }
           handleChange={ handleChangeInputText }
           handleNumeric={ validateHandleNumeric }

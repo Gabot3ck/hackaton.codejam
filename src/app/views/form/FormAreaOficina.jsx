@@ -3,16 +3,16 @@ import { useNavigate } from "react-router-dom";
 
 
 import { Welcome } from "../../components/welcome/Welcome";
-import { SelectFormCheck } from "../../components/form";
+import { SelectAreaTrabajo, SelectFormCheck } from "../../components/form";
 
 
 
-export const FormRequestBasicOfTruck = ( { formData, handleChange } ) => {
+export const FormAreaOficina = ( { formData, handleChange } ) => {
 
   const navigate = useNavigate();
 
 
-  const { area } = formData;
+  const { area, area_trabajo } = formData;
 
   const [ disabledButton, setDisabledButton ] = useState(true);
   const [ next, setNext ] = useState(false);
@@ -52,8 +52,19 @@ export const FormRequestBasicOfTruck = ( { formData, handleChange } ) => {
           name='area'
           value={ area }
           onChange={ handleChange }
-          errorMessage='Seleccione un área de trabajo'
+          errorMessage='Seleccione un área'
         />
+
+        {
+          area === "area_trabajo" && 
+
+          <SelectAreaTrabajo 
+            name='area_trabajo'
+            value={ area_trabajo }
+            onChange={ handleChange }
+            errorMessage='Seleccione un área de trabajo'
+          />
+        }
 
         <button
           className={ `mt-5  w-[90%] md:w-full  h-[40px]

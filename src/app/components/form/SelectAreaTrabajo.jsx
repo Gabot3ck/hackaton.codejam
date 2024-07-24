@@ -1,10 +1,7 @@
-import { useState } from "react";
+import { useState } from 'react'
+import { validateInput } from '../../../helpers';
 
-import { validateInput } from "../../../helpers";
-
-
-
-export const SelectFormCheck = ( { onChange, name, value, errorMessage } ) => {
+export const SelectAreaTrabajo = ( { onChange, name, value, errorMessage } ) => {
 
   const [error, setError] = useState('');
 
@@ -31,10 +28,9 @@ export const SelectFormCheck = ( { onChange, name, value, errorMessage } ) => {
           name={ name }
           value={ value }
         >
-          <option value="">Seleccione un área</option>
-          <option value="area_trabajo">Area de trabajo</option>
-          <option value="area_primera_necesidad">Area de primera necesidad</option>
-          <option value="area_recreacion">Area de recreacion</option>
+          <option value="">Seleccione un área de trabajo</option>
+          <option value="area_trabajo">Puesto de trabajo</option>
+          <option value="area_primera_necesidad">Sala de reuniones</option>
         </select>
       </div>
 
@@ -44,4 +40,3 @@ export const SelectFormCheck = ( { onChange, name, value, errorMessage } ) => {
     </div>
   )
 }
-
