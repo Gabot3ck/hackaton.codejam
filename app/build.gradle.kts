@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -55,5 +56,8 @@ dependencies {
     implementation ("com.squareup.retrofit2:converter-gson:2.11.0")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.4")
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
 
 }

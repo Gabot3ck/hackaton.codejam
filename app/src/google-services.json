@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "146258041781",
+    "project_id": "reserva-espacios-de-trab-894d4",
+    "storage_bucket": "reserva-espacios-de-trab-894d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146258041781:android:1e9cc38b0fb0e2be8ad7fc",
+        "android_client_info": {
+          "package_name": "com.example.reservationpec"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhpLjHXpRBGKKAPE17YAbtVSEJ-MO8tB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

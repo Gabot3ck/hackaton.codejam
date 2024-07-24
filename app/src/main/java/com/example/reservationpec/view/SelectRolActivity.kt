@@ -27,5 +27,9 @@ class SelectRolActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        binding.btnUserRol.setOnClickListener {
+            //accion boton para llevar a usuario a Activity User
+        }
+
     }
 }
