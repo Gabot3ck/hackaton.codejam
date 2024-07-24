@@ -1,0 +1,4 @@
+Credenciales de acceso para el login:
+
+usuario: user@test.cl
+contraseña: User.2024
