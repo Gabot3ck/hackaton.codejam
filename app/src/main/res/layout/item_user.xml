@@ -12,11 +12,11 @@
         android:gravity="center_vertical">
 
         <TextView
-            android:id="@+id/usuarioTextView"
+            android:id="@+id/nombreTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Usuario"
+            android:text="Nombre"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -37,34 +37,26 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/horaReservaTextView"
+        android:id="@+id/apellidoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hora de Reserva"
+        android:text="Apellido"
         android:textSize="14sp"
         android:layout_marginTop="8dp" />
 
     <TextView
-        android:id="@+id/cantidadHorasTextView"
+        android:id="@+id/correoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cantidad de Horas"
+        android:text="Correo"
         android:textSize="14sp"
         android:layout_marginTop="4dp" />
 
     <TextView
-        android:id="@+id/sectorTextView"
+        android:id="@+id/telefonoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sector"
-        android:textSize="14sp"
-        android:layout_marginTop="4dp" />
-
-    <TextView
-        android:id="@+id/fechaTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fecha"
+        android:text="Teléfono"
         android:textSize="14sp"
         android:layout_marginTop="4dp" />
 
